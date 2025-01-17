@@ -13,6 +13,8 @@
         android:layout_height="wrap_content"
         android:text="Word 1"
         android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/word_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +26,8 @@
         android:layout_height="wrap_content"
         android:text="Word 2"
         android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/word_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,6 +39,8 @@
         android:layout_height="wrap_content"
         android:text="Word 3"
         android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/word_4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,6 +52,8 @@
         android:layout_height="wrap_content"
         android:text="Word 4"
         android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/word_5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,9 +65,20 @@
         android:layout_height="wrap_content"
         android:text="Word 5"
         android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/word_4" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/word_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@ package com.joolt.aliaslit;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -13,6 +14,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class StartActivity extends AppCompatActivity {
     TextView start_button;
+    ImageView settings;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,12 +27,20 @@ public class StartActivity extends AppCompatActivity {
             return insets;
         });
 
+        settings = findViewById(R.id.settings);
         start_button = findViewById(R.id.start_button);
 
         start_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(StartActivity.this, MainActivity.class));
+            }
+        });
+
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(StartActivity.this, settingsActivity.class));
             }
         });
 
